@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
+using System.Threading.Tasks;
 
 namespace MethodsExercise
 {
@@ -22,25 +24,30 @@ namespace MethodsExercise
             Console.Write("Name: ");
             var name = Console.ReadLine();
 
-            Console.WriteLine("What is your favorite color?");
+            Console.WriteLine($"So " + name + ". Now that I have your here, what is your favorite color?");
             Console.Write("Color: ");
             var color = Console.ReadLine();
 
-            Console.WriteLine("What is your favorite animal?");
+            Console.WriteLine(color + "? Wow that's a nice color. What is your favorite animal?");
             Console.Write("Animal: ");
-            var animal = Console.ReadLine(); 
-            
-            Console.WriteLine("What is your favorite band?");
+            var animal = Console.ReadLine();
+
+            Console.WriteLine($"A " + animal + " is a good choice indeed. Who is your favorite band?");
             Console.Write("Band: ");
             var band = Console.ReadLine();
 
-            Console.WriteLine("Can I ask you one more question?");
+            Console.WriteLine($"Nice! " + band + " has some smooth classics for sure.");
+            Console.ReadLine();
+
+
+            Console.WriteLine($"Can I ask you one more question?");
             Console.ReadLine();
 
             Console.WriteLine("Who's your favorite basketball player? I am trying to see something");
-            Console.ReadLine();
+            Console.Write("Answer: ");
+            var answer = Console.ReadLine();
 
-            Console.WriteLine("Oh ok");
+            Console.WriteLine($"Oh ok. " + answer + " is a good pick!");
             Console.ReadLine();
 
             Console.WriteLine("Do you want to know who my favorite basketball player of all time is?");
@@ -51,11 +58,6 @@ namespace MethodsExercise
 
             Console.WriteLine("Anyways, nice chatting with you!");
             Console.ReadLine();
-
-
-
-
-
 
 
 
